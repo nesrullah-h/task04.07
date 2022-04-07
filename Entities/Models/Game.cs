@@ -11,12 +11,12 @@ namespace Entities
         public string Name { get; set; }
         public Platform_enum Platform { get; set; }
         public double Price { get; set; }
-        public int DiscountPercent { get; set; }
         public string Publisher { get; set; }
+        public int DiscountPercent { get; set; }
         public bool IsDeleted { get; set; }
         public void ShowInfo()
         {
-            Console.WriteLine($"Id: {Id}\n Price{Price}\n Name:{Name}\n");
+            Console.WriteLine($"Id:{Id}- Price{Price}- Name:{Name}");
         }
         public double GetDiscountedPrice()
         {
